@@ -7,7 +7,7 @@ import java.net.URL
 
 class FirewallCheck(config: FirewallCheckConfig) extends Check {
 
-  override def evaluate: Task[String] = {
+  override def evaluate(): Task[String] = {
     lazy val url = new URL(config.host)
     Resource
       .make(Task.eval(url.openStream))(source => Task.eval(source.close()))

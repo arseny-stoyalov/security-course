@@ -17,3 +17,5 @@ libraryDependencies ++=
     "com.github.pureconfig" %% "pureconfig-yaml" % "0.15.0"
   )
 
+assembly / mainClass := Some("course.Main")
+

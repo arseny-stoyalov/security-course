@@ -15,7 +15,7 @@ object Config {
 
   def load(): Config =
     YamlConfigSource
-      .file("src/main/resources/application.yaml")
+      .file("/Users/a1/Documents/JavaProjects/myprjcts/security-course/src/main/resources/application.yaml")
       .load[Config]
       .fold(f => throw new Exception(f.prettyPrint()), s => s)
 
