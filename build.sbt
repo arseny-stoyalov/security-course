@@ -13,6 +13,7 @@ lazy val catsDeps = Seq(
 libraryDependencies ++=
   catsDeps ++ Seq(
     "io.monix" %% "monix" % "3.4.0",
-    "com.github.pureconfig" %% "pureconfig" % "0.12.3"
+    "com.github.pureconfig" %% "pureconfig" % "0.15.0",
+    "com.github.pureconfig" %% "pureconfig-yaml" % "0.15.0"
   )
 

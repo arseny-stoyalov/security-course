@@ -1,0 +1,16 @@
+connection-check:
+  ping-execution-command: "ping -c 1"
+  hosts:
+    - "217.69.139.200"
+  timeout: 1 minute
+anti-malware:
+  process-ls-command: "ps aux"
+  ls-apps-command: "ls /Applications"
+  app-name: "Dr.Web"
+  process-name: "drweb-filecheck"
+firewall:
+  host: "https://ya.ru/"
+  path: "/Applications/Dr.Web/Dr.Web for macOS.app"
+command-descriptions:
+  connection: "Проверка подключения к Интернету"
+export-path: "/Users/a1/Downloads/result.txt"
