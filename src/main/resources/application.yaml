@@ -1,7 +1,9 @@
 connection-check:
   ping-execution-command: "ping -c 1"
   hosts:
-    - "217.69.139.200"
+    - "8.8.8.8"
+    - "8.8.4.4"
+    - "1.1.1.1"
   timeout: 1 minute
 anti-malware:
   process-ls-command: "ps aux"
@@ -12,5 +14,10 @@ firewall:
   host: "https://ya.ru/"
   path: "/Applications/Dr.Web/Dr.Web for macOS.app"
 command-descriptions:
-  connection: "Проверка подключения к Интернету"
+  connection: "Проверка наличия сетевого подключения"
+  export: "Вывод результатов тестирования в файл"
+  firewall: "Проверка работоспособности межсетевого экрана"
+  hasFirewall: "Проверка наличия установленного межсетевого экрана"
+  antiMalware: "Проверка работоспособности антивирусного ПО"
+  hasAntiMalware: "Проверка наличия установленного антивирусного ПО"
 export-path: "/Users/a1/Downloads/result.txt"
